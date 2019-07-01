@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Calculator</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  </head>
+  <body>
+      <!--Box/Corpo Calculadora-->
+      <div id="box">
+        
+        <!--Display-->
+        <div id="dDisplay">
+          <form name="fDisplay">
+            <input type="text" name="display">
+          </form>
+        </div>
+
+        <!--Teclas-->
+        <div>
+          <form name="fTeclas">
+            <input type="button" value="%" onclick="percentual();">
+            <input type="button" value="v¬" onclick="raizQuadrada();">
+            <input type="button" value="X²" onclick="quadrado();">
+            <input type="button" value="Xª" onclick="potenciacao();"><br>
+            
+            <input type="button" value="CE" onclick="limparVisor();">
+            <input type="button" value="C" onclick="limparVisor();">
+            <input type="button" value="<" onclick="removerUltimoDigito();">
+            <input type="button" value="/" onclick="divisao();"><br>
+            
+            <input type="button" value="7" onclick="botao(value);">
+            <input type="button" value="8" onclick="botao(value);">
+            <input type="button" value="9" onclick="botao(value);">
+            <input type="button" value="*" onclick="multiplicar();"> <br>
+            
+            <input type="button" value="4" onclick="botao(value);">
+            <input type="button" value="5" onclick="botao(value);">
+            <input type="button" value="6" onclick="botao(value);">
+            <input type="button" value="-" onclick="subtrair();"> <br>
+            
+            <input type="button" value="1" onclick="botao(value);">
+            <input type="button" value="2" onclick="botao(value);">
+            <input type="button" value="3" onclick="botao(value);">
+            <input type="button" value="+" onclick="adicao();"> <br>
+            
+            <input type="button" value="+/-" onclick="tocarSinal();">
+            <input type="button" value="0" onclick="botao(value);">
+            <input type="button" value="." onclick="botao(value);">
+            <input type="button" value="=" onclick="resultado(document.fDisplay.display.value);">
+          </form>
+        </div>
+      </div>
+  </body>
+  </html>
